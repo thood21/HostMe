@@ -1,0 +1,101 @@
+<html>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+<div class="header">Results for <?php echo '$username' ?> </div>
+	<body>
+		<div class="row">
+			<div class="column">
+				<div class="card">
+				  <img src="img/darthvadar.jpg" alt="John" style="width:100%">
+				  <h1>John Doe</h1>
+				  <p class="title">CEO & Founder, Example</p>
+				  <p>Harvard University</p>
+				  <p><button>Contact</button></p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+				  <img src="img/darthvadar.jpg" alt="John" style="width:100%">
+				  <h1>John Doe</h1>
+				  <p class="title">CEO & Founder, Example</p>
+				  <p>Harvard University</p>
+				  <p><button>Contact</button></p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="card">
+				  <img src="img/darthvadar.jpg" alt="John" style="width:100%">
+				  <h1>John Doe</h1>
+				  <p class="title">CEO & Founder, Example</p>
+				  <p>Harvard University</p>
+				  <p><button>Contact</button></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<style>
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	border-radius: 10%;
+	background-color: white;
+}
+.header{
+  color: black;
+	font-family: Ubuntu;
+	font-size: 5em;
+	text-align: center;
+}
+
+.title {
+	color: grey;
+	font-size: 18px;
+}
+
+button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 22px;
+	color: black;
+}
+
+button:hover, a:hover {
+	opacity: 0.7;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  float: left;
+  width: 22%;
+  padding: 5.5%;
+  margin-top: 5%;
+}
+body {
+	background-color: #343A40;
+	background-image: url('https://images.unsplash.com/photo-1507418828307-8e909173e254?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=910581fbea7336f623a0a22bb0410cdc&auto=format&fit=crop&w=1052&q=80');
+	background-size: 100% 100%;
+
+}
+img {
+	border-radius: 50%;
+}
+</style>

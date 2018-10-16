@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HostMe - Connecting Immigrants with Host Families</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+
+  <!-- Main Stylesheet File -->
+  <link href="css/tomCSS/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+
+	<style>
+		body {
+			background-image: url('img/pic1.jpeg');
+			background-size: contain;
+		}
+
+	</style>
+	<script type = "text/javascript">
+	var i=1;
+	var j=1;
+	var k=1;
+	onload = function() {
+	
+		function changeItems() {
+			var BackgroundImg = ["img/pic1.jpeg", 
+		"img/pic2.jpeg", 
+		"img/pic3.jpeg", 
+		"img/pic4.jpeg"
+		];
+
+			var h1Languages = ["connecting cultures",
+		"conectando culturas", 
+		"连接文化",
+		"spojující kultury",
+		"kültürleri birleştirmek",
+		"Kết nối các nền văn hóa"	
+		];
+
+			var h2Languages = ["One family at a time",
+		"Una familia a la vez",
+		"一次一个家庭",
+		"Jedna rodina najednou",
+		"Bir seferde bir aile",
+		"Một gia đình tại một thời điểm"
+		];
+				
+		var body = document.getElementsByTagName('body')[0];
+		body.style.backgroundImage = 'url("' + BackgroundImg[i] + '")';
+
+		var h1 = document.getElementsByTagName('h1')[0];
+		h1.innerHTML = h1Languages[j];
+
+		var h2 = document.getElementsByTagName('h2')[0];
+		h2.innerHTML = h2Languages[k];
+
+		i++;
+		j++;
+		k++;
+
+		if(i>=4){
+		i=0;
+		}
+		
+		if(j>=6){
+		j=0;
+		}
+		
+		if(k>=6){
+		k=0;
+		}
+	}
+
+		window.setInterval(changeItems, 5000);
+	}
+	
+</script>
+</head>
+
+<body>
+	
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div id="top" class="container">
+
+      <div class="pull-left">
+        <a href="#" style="color: white; font-family: Ubuntu; font-size: 2.8em;">HostMe</a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#">HostMe</a></li>
+          <li><a href="loginpage.html">Log in</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1 style="font-family: Ubuntu;">Connecting cultures</h1>
+      <h2 style="font-family: Ubuntu;">One family at a time</h2>
+      <a href="immigrant_register.html" class="btn-immigrant">I'm Coming to America</a>
+	  <a href="host_register.html" class="btn-host">I want to Host</a>
+	  
+    </div>
+  </section><!-- #hero -->
+  
+
+  <main id="main">
+
+    
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title" style="margin-bottom: 5%;">Always putting people first</h3>
+        </div>
+      </div>
+
+      <!-- Uncomment below if you wan to use dynamic maps -->
+      <!--<div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>-->
+
+      <div class="container wow fadeInUp">
+        <div class="row justify-content-center">
+
+          <div class="col-lg-3 col-md-4">
+
+            <div class="info">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p>6800 Wydown Blvd.<br>Clayton, MO 63105</p>
+              </div>
+
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p>fbuhostme@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="fa fa-phone"></i>
+                <p>+1 314 862 3456</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit" style="border-radius: 12px;">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>HostMe</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <!-- Uncomment below if you want to use dynamic Google Maps -->
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script> -->
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

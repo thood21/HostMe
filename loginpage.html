@@ -1,0 +1,215 @@
+<html >
+<div class="login-page">
+
+	<div class="header" style="margin-top: -25%;">
+	 <div class="openTypeText">
+  		<span class="letter" data-letter="H">H</span>
+  		<span class="letter" data-letter="O">O</span>
+		<span class="letter" data-letter="S">S</span>
+		<span class="letter" data-letter="T">T</span>
+		<span class="letter" data-letter="M">M</span>
+		<span class="letter" data-letter="E">E</span>
+	 </div>
+	</div>
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+  <div class="form" style="margin-top: 30%;">
+    <form class="login-form" name="logInForm" method="post">
+      <input type="login_username" id="login_username" placeholder="Username"/>
+      <input type="login_password" id="login_password" placeholder="Password"/>
+      <button name="login">login</button>
+      <p class="message">Not registered? <a href="index.html">Create an account</a></p>
+    </form>
+  </div>
+</div>
+<script>
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+<?php
+	if(isset($_POST['login']))
+        {
+          $login_username = $_POST["login_username"];
+          $login_password = $_POST["login_password"];
+		}
+	$query = "INSERT INTO fillinfordatabasename(login_username, login_password) VALUES ('$login_username', '$login_password;);";
+</script>
+</html>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 10% 0 0;
+  margin: auto;
+}
+.header{
+	color: whitesmoke;
+	font-family: Ubuntu;
+	font-size: 2.8em;
+	text-align: center;
+	margin-top: -15%;
+	margin-bottom: 17%;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background: url("https://images.unsplash.com/photo-1535103361068-aceb3935647a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6708a1344a3ab5a83710b5abef5bbe28&auto=format&fit=crop&w=1950&q=80");
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+div.openTypeText{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 1.4em;
+  margin: 0em;
+  position: relative;
+  color: #43A047;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+</style>

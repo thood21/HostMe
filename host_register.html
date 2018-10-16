@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HostMe - Registration</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE SHEETS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<!--Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+  			// Add smooth scrolling to all links
+  			$("a").on('click', function(event) {
+    			// Make sure this.hash has a value before overriding default behavior
+    			if (this.hash !== "") {
+     			 // Prevent default anchor click behavior
+      			event.preventDefault();
+      			// Store hash
+      			var hash = this.hash;
+      			// Using jQuery's animate() method to add smooth page scroll
+      			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      			$('html, body').animate({
+      			  scrollTop: $(hash).offset().top
+      			}, 800, function(){
+   	
+      			  // Add hash (#) to URL when done scrolling (default click behavior)
+       			 window.location.hash = hash;
+      			});
+    			} // End if
+  			});
+			});
+			</script>
+
+		<style>
+			body{
+			background-image: url('images/background_immigrant.jpg');
+			background-size: 100% 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="images/registration-form-1.jpg" alt="Picture goes here">
+				</div>
+				<form action="host_insert.php" action="post">
+					<h3>Welcome to the HostMe Community!</h3>
+					<div class="form-wrapper">
+						<input type="text" name="fname" placeholder="First Name" class="form-control">
+                    </div>
+                    <div class="form-wrapper">
+						<input type="text" name="lname" placeholder="Last Name" class="form-control">
+					</div>
+					<div class="form-group">
+						
+						<div class="form-wrapper">
+                            <input type="number" name="age" placeholder="Age" class="form-control">
+                        </div>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" name="email" placeholder="Email Address" class="form-control">
+						<i class="zmdi zmdi-email"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" name="password" placeholder="Password" class="form-control">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="password" placeholder="Confirm Password" class="form-control">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<div class="form-group">
+                            <input type="text" name="location" placeholder="Location" class="form-control">                 
+                    </div>
+                    <div class="form-holder" style="margin-bottom: 2%;">
+                    	<input type="checkbox" name="pet" value="yes"> Have Pets?
+                    	<br>
+                        <input type="checkbox" name="rent" value="yes" style="margin-bottom: -2%;"> Rent Required?
+                        <br>
+                        <input type="checkbox" name="reg_english" value="yes">English Required?<br>
+                    </div>
+                    <br>
+					<div class="form-group">	
+                        <select name="purpose" id="" class="form-control">
+                                    <option value="" disabled selected>I Want to Host</option>
+                                    <option value="school">Students</option>
+                                    <option value="work">Employees</option>
+                                    <option value="tourist">Tourists</option>  
+                        </select>
+                       <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+
+						<select name="housetype" id="" class="form-control">	
+							<option value="" disabled selected>Current Home</option>
+							<option value="apartment">Apartment</option>
+							<option value="house">House</option>
+							<option value="other">Other</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+                    <div class="form-holder">
+                        <input type="text" name="second_lang" placeholder="Other Languages" class="form-control">
+                    </div>
+                    <div class="form-group">
+						<select name="dateofdeparture" id="" class="form-control">
+							<option value="" disabled selected>Hosting Availability</option>
+							<option value="Six Months or Less">Six Months or Less</option>
+							<option value="Six Months to a Year">Six Months to a Year</option>
+							<option value="More Than a Year">More than a Year</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+				
+					<button id="button"  style="border-radius: 12px;"><a class="js-scroll-trigger" style="color: whitesmoke;" >Register</a>
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+				</form>
+			</div>
+		</div>
+
+
+<!-- <script src="js/main.js"></script> -->
+			<!-- JS -->
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
